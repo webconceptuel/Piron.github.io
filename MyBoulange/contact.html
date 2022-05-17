@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie et Pâtisserie - contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="contact-desc" content="Boulangerie Pâtisserie David Piron. Vente de viennoiseries, pains, pâtisseries. Contactez-nous via notre formulaire de contact si vous avez des requêtes particulières à propos d’évènement, d’une commande, ou autre. Découvrez nos créations artisanales tous les jours du lundi au vendredi de 7h à 20h.">
+    <script src="https://kit.fontawesome.com/0f4218864d.js" crossorigin="anonymous"></script><!-- Icones nos services -->
+</head>
+<body>
+    <section class="top-page">
+        <header class="header">
+            <a href="index.html"><img class="logo"src="Images/logo-piron.png" href="index.html" alt="Logo du site"></a>
+        <ul class="nav-links">
+                <li>
+                    <a href="index.html"><nobr>Accueil</nobr></a>
+                </li>
+                <li>
+                    <a href="index.html#produits"><nobr>Nos créations</nobr></a>
+                </li>
+                <li>
+                    <a href="boutique.html"><nobr>Nos magasins</nobr></a>
+                </li>
+                <li>
+                    <a href="index.html#us"><nobr>Qui sommes nous</nobr></a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+    </section>
+
+<section class="contact">
+    <div class="formulaire">
+        <h1 class="titleinfo"><span class="pastille"><span class="texte">Prenez les devants, contactez-nous !</span></span></h1>
+    <!-- <a data-text="Prenez les devants, contactez-nous !">Prenez les devants, contactez-nous !</a> -->
+    <div id="arrowAnim">
+        <div class="arrowSliding">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+          <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay3">
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="formulaire">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefb7h61E9ag--QsnH_PvFFi92jUYzeIU8fFqF-iMHGy6I3RA/viewform?embedded=true" width="740" height="1700" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+    </div>
+</section>
+
+            <!-- bouton retour vers le haut -->
+            <div style="height:6px">
+                <button onclick="retourHaut()" id="haut" title="Retour haut de page">^</button>
+                </div>
+            </section>
+        
+            <script>
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
+                {
+                document.getElementById("haut").style.display = "block";
+                } 
+                else 
+                {
+                document.getElementById("haut").style.display = "none";
+                }
+                }
+                
+                function retourHaut() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                } 
+                </script>
+        
+            <section class="footerd">
+            <footer>
+                <p class="copyright">
+                    &copy; 2022 - Pâtisserie Molinario</p>
+                    <div class="reseau">
+                        <a href="https://www.facebook.com/Pâtisserie-Chocolaterie-Piron-357983037617849/" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/david__piron/?utm_source=ig_embed&ig_rid=91c88efc-d970-42b3-884e-f47dcda4bdca" target="_blank" class="fa fa-instagram"></a>
+                    </div>
+                    <a href="" class="cgu">Conditions générales d'utilisation</a>
+                    
+                    
+            </footer>
+            </section> 
+
+<script>
+    const burgerContainer = document.querySelector('.burger-container');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerContainer.addEventListener('click', () => {
+        burgerContainer.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    })
+</script>
+</body>
+</html>

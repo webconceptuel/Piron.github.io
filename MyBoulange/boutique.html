@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie et Pâtisserie - magasins</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name ="boutique-desc" content="Boulangerie Pâtisserie David Piron. Vente de viennoiseries, pains, pâtisseries. Venez nous rendre visite dans nos deux magasins à Mouans-Sartoux pâtisserie chocolaterie et à Grasse boulangerie pâtisserie. Découvrez nos créations artisanales tous les jours du lundi au vendredi de 7h à 20h.">
+    <script src="https://kit.fontawesome.com/0f4218864d.js" crossorigin="anonymous"></script> <!-- Icones nos services -->
+    <script type="text/javascript">
+        function visibilite(thingId)
+        {
+        var targetElement;
+        targetElement = document.getElementById(thingId) ;
+        if (targetElement.style.display == "none")
+        {
+        targetElement.style.display = "" ;
+        } else {
+        targetElement.style.display = "none" ;
+        }
+        }
+        </script>
+</head>
+<body>
+    <section class="top-page">
+        <header class="header">
+            <a href="index.html"><img class="logo"src="Images/logo-piron.png" href="index.html" alt="Logo du site"></a>
+        <ul class="nav-links">
+                <li>
+                    <a href="index.html"><nobr>Accueil</nobr></a>
+                </li>
+                <li>
+                    <a href="index.html#produits"><nobr>Nos créations</nobr></a>
+                </li>
+                <li>
+                    <a href="boutique.html"><nobr>Nos magasins</nobr></a>
+                </li>
+                <li>
+                    <a href="index.html#us"><nobr>Qui sommes nous</nobr></a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+    </section>
+
+    <section class="boutique">
+        <div class="boutique-items">
+            <a href="https://www.google.com/maps/place/P%C3%A2tisserie+Piron/@43.6181657,6.9726593,21z/data=!4m18!1m12!4m11!1m3!2m2!1d6.9726962!2d43.6181837!1m6!1m2!1s0x12cc2907bbb725eb:0x11bef5681aaf9ba!2sP%C3%A2tisserie+Piron+8+All.+des+C%C3%A8dres+06370+Mouans-Sartoux!2m2!1d6.9726888!2d43.6181822!3m4!1s0x12cc2907bbb725eb:0x11bef5681aaf9ba!8m2!3d43.6181822!4d6.9726888" target="_blank"><i class="fas fa-location-dot icon"></i></a>
+            <p class="boutique-details">Mouans-sartoux</p>
+            <a class="txt" href="" onmouseover="javascript:visibilite('id_div_1'); return false;" onmouseout="javascript:visibilite('id_div_1'); return false;">🍫 | 🧁</a>
+<div class="txt1" id="id_div_1" style="display:none;">
+Chocolaterie | Pâtisserie | café
+</div>
+        </div>
+        <div class="boutique-items">
+            <a href="https://www.google.com/maps/place/97+Rte+de+la+Paoute,+06130+Grasse/@43.6340809,6.9557582,17z/data=!3m1!4b1!4m5!3m4!1s0x12cc28e6d718c201:0xf7eaa2cc821b4a02!8m2!3d43.6340809!4d6.9579469" target="_blank"><i class="fas fa-location-dot icon"></i></a>
+            <p class="boutique-details">Grasse</p>
+            <a class="txt" href="" onmouseover="javascript:visibilite('id_div_2'); return false;" onmouseout="javascript:visibilite('id_div_2'); return false;">🥖 | 🧁 | 🥪 | 🍽</a>
+<div class="txt1" id="id_div_2" style="display:none;">
+Boulangerie | Pâtisserie | Sandwicherie</br>plat du jour | café
+</div>
+        </div>
+    </section>
+    <HR class="HR" align="center" width="25%">
+        
+    <section class="horaire">
+        <!-- <div class="horaire-items">
+            <i class="fas fa-house icon-h"></i>
+            <p class="horaire-details">Sur place ou à emporter</p>
+        </div> -->
+        <div class="horaire-items">
+            <i class="fas fa-clock icon-h"></i>
+            <p class="horaire-details">Lundi : Fermé <br>Mardi : 8h - 19h<br>Mercredi : 8h - 19h<br>Jeudi : 8h - 19h<br>Vendredi : 8h - 19h<br>Samedi : 8h - 19h<br>Dimanche : 8h - 13h</p>
+        </div>
+        <div class="horaire-items">
+            <i class="fas fa-clock icon-h"></i>
+            <p class="horaire-details">Lundi : 7h - 20h <br>Mardi : 7h - 20h<br>Mercredi : 7h - 20h<br>Jeudi : 7h - 20h<br>Vendredi : 7h - 20h</p>
+        </div>
+    </section>
+    <section class="carte">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.4409141804326!2d6.97049241518346!3d43.618181262712945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2907bbb725eb%3A0x11bef5681aaf9ba!2sP%C3%A2tisserie%20Piron!5e0!3m2!1sfr!2sfr!4v1650573228668!5m2!1sfr!2sfr" width="730" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4331.6150382570895!2d6.955737813979777!3d43.63426636802443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc28e6d718c201%3A0xf7eaa2cc821b4a02!2s97%20Rte%20de%20la%20Paoute%2C%2006130%20Grasse!5e0!3m2!1sfr!2sfr!4v1650574138037!5m2!1sfr!2sfr" width="750" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.4409141804326!2d6.97049241518346!3d43.618181262712945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2907bbb725eb%3A0x11bef5681aaf9ba!2sP%C3%A2tisserie%20Piron!5e0!3m2!1sfr!2sfr!4v1650573228668!5m2!1sfr!2sfr" width="2000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </section>
+
+    <section class="footerd">
+        <footer>
+            <p class="copyright">
+                &copy; 2022 - Pâtisserie Molinario</p>
+                <div class="reseau">
+                    <a href="https://www.facebook.com/Pâtisserie-Chocolaterie-Piron-357983037617849/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/david__piron/?utm_source=ig_embed&ig_rid=91c88efc-d970-42b3-884e-f47dcda4bdca" target="_blank" class="fa fa-instagram"></a>
+                </div>
+                <a href="" class="cgu">Conditions générales d'utilisation</a>
+                
+                
+        </footer>
+        </section> 
+        
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+    </body>
+    </html>
